@@ -9,15 +9,15 @@ neofetch
 # term
 PS1='[\u@\h \w]\$ '
 alias ls='ls --color=auto'
-alias ll='ls -lh --color=auto'
+alias ll='ls -lha --color=auto'
 alias grep='grep --color=auto'
 alias du='du -sh' # disk usage
 alias c='clear' # clear terminal
 alias r='source ~/.bashrc' # reset terminal
 
 #password
-MESSAGE="test"
-alias test='echo -n "$MESSAGE" | xclip -selection clipboard'
+MESSAGE="xxx"
+alias pass='echo -n "$MESSAGE" | xclip -selection clipboard'
 
 # Manage packages.
 alias listpkg='pacman -Qe'
@@ -38,8 +38,9 @@ alias ..='cd ..'
 alias home='cd ~'
 alias dev='cd ~/dev'
 alias scripts='cd ~/scripts'
+alias ssh_keys='cd ~/.ssh/'
 
 # Prog and DCCs
 alias sublime='subl'
 alias vscode='code'
-alias unreal='~/dccs/ue5/Engine/Binaries/Linux/UnrealEditor -resX=1920 -resY=1200'
+alias unreal='~/dccs/UnrealEngine_5_4_4/Engine/Binaries/Linux/UnrealEditor -resX=1920 -resY=1200'
